@@ -30,3 +30,8 @@ drawVerticalLine(30,2, "yellow");
 drawVerticalLine(30,14, "yellow");
 
 
+drawHorizontalLength(5,50, "green",90);
+
+drawVertikalLength(52,45,"white",5);
+
+drawRectangle(60, 5, 30, 20);
