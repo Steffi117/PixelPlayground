@@ -90,3 +90,27 @@ checkPixel(1,1, "black", "checkPixel(1,1)")
 
 // reset
 clearScreen("black");
+
+
+function drawHorizontalLength(x, y, color, length) {
+    for(let i = 0; i < length; i = i+1) {
+      drawPixel(x + i, y, color);
+    }
+}
+
+function drawVertikalLength(x, y, color, length) {
+    for(let i = 0; i < length; i = i+1) {
+      drawPixel(x, y +i, color);
+    }
+}
+
+ function drawRectangle (x, y, width, height) {
+  for (let i = 0; i < width; i = i + 1) {
+    drawPixel(x + i, y);
+    drawPixel(x + i, y + height);
+  for (let i = 0; i < height; i = i + 1) {
+  drawPixel(x, y + i);
+  drawPixel(x + width, y + i); }
+  }
+ }
+ 
