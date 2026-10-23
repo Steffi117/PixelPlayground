@@ -49,3 +49,31 @@ checkPixel(1,1, "black", "checkPixel(1,1)")
 
 // reset
 clearScreen("black");
+
+
+function drawFromParameters(xOffset, yOffset, xCoords, yCoords, colors) {
+  for(let i = 0; i < xCoords.length; i++) {
+    console.log(xCoords[i] + "/" + yCoords[i]+"/" + colors[i]);
+  }
+}
+ 
+function drawFromParameters(xOffset, yOffset, xCoords, yCoords, colors) {
+  for(let i = 0; i < xCoords.length; i++) {
+    const x = xOffset + xCoords[i];
+    const y = yOffset + yCoords[i];
+    const color = colors[i];
+    drawPixel(x,y, color);
+  }
+}
+ 
+
+function drawFromObjParameters(xOff, yOff, params) {
+  for (let i = 0; i < params.length; i++) {
+    const x = params[i].x + xOff;
+    const y = params[i].y + yOff;
+    const color = params[i].color;
+    drawPixel(x,y,color);
+  }
+}
+ 
+
