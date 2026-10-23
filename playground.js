@@ -5,3 +5,5 @@ console.log("hello World");
 
 console.log(face_colors);
 
+drawFromParameters(15,15, face_pixels)
+
